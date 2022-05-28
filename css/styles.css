@@ -115,8 +115,8 @@ ul.nav {
   padding: 50px 0 20px;
 }
 
-.about-row {
-  width: 50%;
+.text-row {
+  width: 45%;
   margin: 100px auto 100px auto;
   text-align: left;
 }
@@ -154,13 +154,13 @@ ul.nav {
 }
 
 .left-img {
-  width: 10rem;
+  width: 25%;
   float: left;
   margin-right: 2rem;
 }
 
 .right-img {
-  width: 10rem;
+  width: 25%;
   float: right;
   margin-left: 2rem;
 }
