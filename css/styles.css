@@ -1,8 +1,15 @@
+:root{
+  --pearl-white: #FBFCF8;
+  --frost:#FCFBFC;
+  --neon-grey:#808080;
+}
+
 body {
   color: #40514E;
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
+  cursor: none;
 }
 
 h1 {
@@ -30,9 +37,10 @@ p {
 }
 
 hr {
-  border: dotted #EAF6F6 6px;
+  color:var(--neon-grey);
+  border: dotted 7px;
   border-bottom: none;
-  width: 4%;
+  width: 3%;
   margin: 100px auto;
 }
 
@@ -50,14 +58,16 @@ a:hover {
 nav {
   position:fixed;
   background-color: #333;
-  overflow: hidden;
-  width: 100%;
+  top:0;
+  left:0;
+  right:0;
+  z-index:99;
+  padding:auto auto;
 }
 
 nav a {
   color: #f2f2f2;
   text-align: center;
-  padding: 0.9rem 0.9rem;
   font-size: auto;
   text-decoration: underline;
 }
@@ -96,7 +106,7 @@ ul.nav {
    width: 250px;
    border-radius: 50%;
    border: 5px solid #35858B;
-   margin: 10px;
+   margin-top: 5rem;
  }
 
 
@@ -107,7 +117,8 @@ ul.nav {
 }
 
 .middle-container {
-  margin: 100px 0;
+  margin: auto 0;
+  background-color: var(--pearl-white);
 }
 
 .bottom-container {
@@ -144,7 +155,7 @@ ul.nav {
 .top-cloud {
   position: absolute;
   right: 300px;
-  top: 40px;
+  top: 5rem;
 }
 
 .bottom-cloud {
@@ -190,4 +201,15 @@ ul.nav {
   background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
+}
+
+.cursor{
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  pointer-events: none;
 }
